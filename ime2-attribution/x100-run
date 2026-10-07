@@ -1,0 +1,25 @@
+#!/bin/bash
+# x100-run —— 强制在 X100 通用簇 (cpu0-7) 上运行一个命令
+#
+# 注意：内核的簇绑定是【单向】的。如果调用者本身已经被注册成 AI 线程，
+# 就无法再回到通用簇，此时本脚本会给出警告并按原样执行。
+#
+# 用法: x100-run <命令> [参数...]
+set -u
+
+X100="${AI16_X100:-0-7}"
+
+if [ "$#" -eq 0 ]; then
+	echo "用法: x100-run <命令> [参数...]" >&2
+	exit 2
+fi
+
+if taskset -c "$X100" $$ 2>/dev/null; then
+	exec "$@"
+fi
+
+cur=$(sed -n 's/^Cpus_allowed_list:[[:space:]]*//p' /proc/self/status)
+echo "x100-run: 无法绑定到通用簇 $X100（当前允许: $cur）" >&2
+echo "x100-run: 内核的簇绑定是单向的 —— 已注册为 AI 线程的进程无法回退。" >&2
+echo "x100-run: 请从未注册的父进程启动本命令。现在按原样执行。" >&2
+exec "$@"

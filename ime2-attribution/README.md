@@ -13,3 +13,14 @@ and PR #7037 (SDPA IME2 flash prefill).
 
 Environment: SpacemiT K3, A100 cluster cpu8-15, GCC 17.0.0 20260928 +
 binutils 2.47.50, Qwen3-0.6B, threads=8, 5 replicates per arm.
+
+## Companion scripts (these depend on the `ncnn_llm` application, not on ncnn itself)
+
+* `check_correctness.sh` — the three-leg byte-identical gate: greedy decoding of
+  the same prompt must produce identical bytes from `IME2@A100`, `RVV@A100` and
+  `RVV@X100`. The X100 leg first asserts VLEN==256, because that leg silently
+  degrading once produced a false pass.
+* `x100-run` — the mirror of `ai-run` for the X100 cluster (cpu0-7).
+
+Both are reproduced here for reference; they invoke `k3bench` from the
+`ncnn_llm` repository, so they are not runnable from an ncnn checkout alone.

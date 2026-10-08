@@ -1,0 +1,81 @@
+key,mode,variant,rep,ms,gflops
+fp16in M=1 N=151936,fp16in,unpatched (16bdc2d),1,45.806,6.79
+fp16in M=1 N=151936,fp16in,unpatched (16bdc2d),2,46.4067,6.71
+fp16in M=1 N=151936,fp16in,unpatched (16bdc2d),3,45.9807,6.77
+fp16in M=1 N=151936,fp16in,unpatched (16bdc2d),4,45.8511,6.79
+fp16in M=1 N=151936,fp16in,unpatched (16bdc2d),5,46.0054,6.76
+fp16in M=1 N=151936,fp16in,with mismatch guard,1,46.354,6.71
+fp16in M=1 N=151936,fp16in,with mismatch guard,2,46.247,6.73
+fp16in M=1 N=151936,fp16in,with mismatch guard,3,45.8743,6.78
+fp16in M=1 N=151936,fp16in,with mismatch guard,4,46.651,6.67
+fp16in M=1 N=151936,fp16in,with mismatch guard,5,46.5483,6.68
+fp16in M=1 N=4096,fp16in,unpatched (16bdc2d),1,0.3679,22.8
+fp16in M=1 N=4096,fp16in,unpatched (16bdc2d),2,0.3637,23.06
+fp16in M=1 N=4096,fp16in,unpatched (16bdc2d),3,0.362,23.17
+fp16in M=1 N=4096,fp16in,unpatched (16bdc2d),4,0.3649,22.99
+fp16in M=1 N=4096,fp16in,unpatched (16bdc2d),5,0.3634,23.09
+fp16in M=1 N=4096,fp16in,with mismatch guard,1,0.3671,22.85
+fp16in M=1 N=4096,fp16in,with mismatch guard,2,0.3636,23.07
+fp16in M=1 N=4096,fp16in,with mismatch guard,3,0.3661,22.91
+fp16in M=1 N=4096,fp16in,with mismatch guard,4,0.3652,22.97
+fp16in M=1 N=4096,fp16in,with mismatch guard,5,0.3615,23.2
+fp16in M=128 N=2048,fp16in,unpatched (16bdc2d),1,1.2924,415.42
+fp16in M=128 N=2048,fp16in,unpatched (16bdc2d),2,1.2946,414.7
+fp16in M=128 N=2048,fp16in,unpatched (16bdc2d),3,1.2873000000000001,417.06
+fp16in M=128 N=2048,fp16in,unpatched (16bdc2d),4,1.2942,414.82
+fp16in M=128 N=2048,fp16in,unpatched (16bdc2d),5,1.2865,417.32
+fp16in M=128 N=2048,fp16in,with mismatch guard,1,1.3543,396.4
+fp16in M=128 N=2048,fp16in,with mismatch guard,2,1.2908,415.92
+fp16in M=128 N=2048,fp16in,with mismatch guard,3,1.2908,415.93
+fp16in M=128 N=2048,fp16in,with mismatch guard,4,1.2875,416.98
+fp16in M=128 N=2048,fp16in,with mismatch guard,5,1.3264,404.77
+fp16in M=512 N=2048,fp16in,unpatched (16bdc2d),1,4.9555,433.36
+fp16in M=512 N=2048,fp16in,unpatched (16bdc2d),2,5.1807,414.52
+fp16in M=512 N=2048,fp16in,unpatched (16bdc2d),3,5.0962,421.39
+fp16in M=512 N=2048,fp16in,unpatched (16bdc2d),4,5.1305,418.57
+fp16in M=512 N=2048,fp16in,unpatched (16bdc2d),5,5.0693,423.63
+fp16in M=512 N=2048,fp16in,with mismatch guard,1,5.0491,425.32
+fp16in M=512 N=2048,fp16in,with mismatch guard,2,5.045,425.67
+fp16in M=512 N=2048,fp16in,with mismatch guard,3,5.1083,420.39
+fp16in M=512 N=2048,fp16in,with mismatch guard,4,5.199,413.06
+fp16in M=512 N=2048,fp16in,with mismatch guard,5,5.0516,425.11
+fp32 M=1 N=151936,fp32,unpatched (16bdc2d),1,93.1264,3.34
+fp32 M=1 N=151936,fp32,unpatched (16bdc2d),2,92.7563,3.35
+fp32 M=1 N=151936,fp32,unpatched (16bdc2d),3,92.9787,3.35
+fp32 M=1 N=151936,fp32,unpatched (16bdc2d),4,92.6622,3.36
+fp32 M=1 N=151936,fp32,unpatched (16bdc2d),5,92.9603,3.35
+fp32 M=1 N=151936,fp32,with mismatch guard,1,93.2007,3.34
+fp32 M=1 N=151936,fp32,with mismatch guard,2,93.6227,3.32
+fp32 M=1 N=151936,fp32,with mismatch guard,3,93.4515,3.33
+fp32 M=1 N=151936,fp32,with mismatch guard,4,94.1265,3.31
+fp32 M=1 N=151936,fp32,with mismatch guard,5,92.9827,3.35
+fp32 M=1 N=4096,fp32,unpatched (16bdc2d),1,0.765,10.97
+fp32 M=1 N=4096,fp32,unpatched (16bdc2d),2,0.7818,10.73
+fp32 M=1 N=4096,fp32,unpatched (16bdc2d),3,0.7828,10.72
+fp32 M=1 N=4096,fp32,unpatched (16bdc2d),4,0.7663,10.95
+fp32 M=1 N=4096,fp32,unpatched (16bdc2d),5,0.7595,11.05
+fp32 M=1 N=4096,fp32,with mismatch guard,1,0.7621,11.01
+fp32 M=1 N=4096,fp32,with mismatch guard,2,0.7605,11.03
+fp32 M=1 N=4096,fp32,with mismatch guard,3,0.7675,10.93
+fp32 M=1 N=4096,fp32,with mismatch guard,4,0.7627,11
+fp32 M=1 N=4096,fp32,with mismatch guard,5,0.7576,11.07
+fp32 M=128 N=2048,fp32,unpatched (16bdc2d),1,2.4253,221.37
+fp32 M=128 N=2048,fp32,unpatched (16bdc2d),2,2.3579,227.69
+fp32 M=128 N=2048,fp32,unpatched (16bdc2d),3,2.3538,228.09
+fp32 M=128 N=2048,fp32,unpatched (16bdc2d),4,2.4828,216.23
+fp32 M=128 N=2048,fp32,unpatched (16bdc2d),5,2.3648,227.03
+fp32 M=128 N=2048,fp32,with mismatch guard,1,2.4051,223.22
+fp32 M=128 N=2048,fp32,with mismatch guard,2,2.4115,222.62
+fp32 M=128 N=2048,fp32,with mismatch guard,3,2.4674,217.59
+fp32 M=128 N=2048,fp32,with mismatch guard,4,2.5756,208.45
+fp32 M=128 N=2048,fp32,with mismatch guard,5,2.4361,220.38
+fp32 M=512 N=2048,fp32,unpatched (16bdc2d),1,9.3661,229.28
+fp32 M=512 N=2048,fp32,unpatched (16bdc2d),2,9.4987,226.08
+fp32 M=512 N=2048,fp32,unpatched (16bdc2d),3,9.4017,228.42
+fp32 M=512 N=2048,fp32,unpatched (16bdc2d),4,9.7477,220.31
+fp32 M=512 N=2048,fp32,unpatched (16bdc2d),5,9.4937,226.2
+fp32 M=512 N=2048,fp32,with mismatch guard,1,9.4346,227.62
+fp32 M=512 N=2048,fp32,with mismatch guard,2,9.7443,220.38
+fp32 M=512 N=2048,fp32,with mismatch guard,3,9.501,226.03
+fp32 M=512 N=2048,fp32,with mismatch guard,4,9.8373,218.3
+fp32 M=512 N=2048,fp32,with mismatch guard,5,9.7098,221.17

@@ -1,0 +1,5 @@
+build,M,n,silent,crash,pct_silent
+unpatched,1,42,14,28,33.333333333333336
+unpatched,32,42,1,41,2.380952380952381
+with guard,1,42,0,0,0
+with guard,32,42,0,0,0

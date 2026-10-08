@@ -1,0 +1,7 @@
+build,K,n,silent,crash,pct_silent
+unpatched,256,28,2,26,7.142857142857143
+unpatched,1024,28,9,19,32.142857142857146
+unpatched,2048,28,4,24,14.285714285714286
+with guard,256,28,0,0,0
+with guard,1024,28,0,0,0
+with guard,2048,28,0,0,0
